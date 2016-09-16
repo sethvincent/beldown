@@ -1,10 +1,20 @@
 var marked = require('marked')
 var bel = require('bel')
+var fm = require('front-matter')
 
 module.exports = function beldown (strings) {
   var parts = []
   var l = strings.length
   var i = 0
+  
+  // use front-matter to get options for marked
+  if (fm.test(strings[i])) {
+    var content = fm(strings[i])
+    var opts = content.attributes
+    marked.setOptions(opts)
+    strings = [].concat(strings)
+    strings[i] = content.body
+  }
 
   // strip leading whitespace (hopefully this doesn't break anything)
   for (i; i < l; i++) {
