@@ -2,6 +2,12 @@
 
 Create dom nodes from markdown inside tagged template strings using [bel](https://github.com/shama/bel) & [marked](https://github.com/chjj/marked).
 
+## Install
+
+```
+npm install --save beldown
+```
+
 ## Why
 
 Because maybe you're working with [yo-yo](https://github.com/maxogden/yo-yo) or [choo](https://github.com/yoshuawuyts/choo) and want a way to easily turn markdown into dom nodes they can use.
