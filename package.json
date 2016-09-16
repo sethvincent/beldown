@@ -1,0 +1,32 @@
+{
+  "name": "beldown",
+  "version": "1.0.0",
+  "description": "create dom nodes from markdown inside tagged template strings using bel & marked",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sethvincent/beldown.git"
+  },
+  "keywords": [
+    "markdown",
+    "bel",
+    "yo-yo",
+    "choo"
+  ],
+  "author": "sethvincent",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sethvincent/beldown/issues"
+  },
+  "homepage": "https://github.com/sethvincent/beldown#readme",
+  "dependencies": {
+    "bel": "^4.4.3",
+    "marked": "^0.3.6"
+  },
+  "devDependencies": {
+    "tape": "^4.6.0"
+  }
+}
