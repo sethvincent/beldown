@@ -7,3 +7,12 @@ var html = md`
 `
 
 console.log(html.toString())
+
+var options = md`---
+  gfm: false
+  ---
+  
+  ~~Github flavorded markdown is off~~
+`
+
+console.log(options.toString())
