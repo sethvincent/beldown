@@ -37,17 +37,15 @@ This returns:
 
 ## Passing options to [marked](https://github.com/chjj/marked)
 
-Use YAML at the top of the markdown string to pass options to marked.
-
 ```js
 var md = require('beldown')
 
-var html = md`---
+md.setOptions({
   gfm: false
-  ---
+})
 
-  ~~Github flavored markdown is off~~
-`
+var html = md`~~Github flavored markdown is off~~`
+console.log(html.toString())
 ```
 
 This returns:
@@ -55,25 +53,6 @@ This returns:
 ```html
 <div>
 <p>~~Github flavorded markdown is off~~</p>
-</div>
-```
-
-To turn gfm back on you would do this:
-
-```js
-var html = md`---
-  gfm: true
-  ---
-
-  ~~Github flavored markdown is back on~~
-`
-```
-
-This returns:
-
-```html
-<div>
-<p><del>Github flavorded markdown is back on</del></p>
 </div>
 ```
 

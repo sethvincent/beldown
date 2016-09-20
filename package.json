@@ -24,7 +24,6 @@
   "homepage": "https://github.com/sethvincent/beldown#readme",
   "dependencies": {
     "bel": "^4.4.3",
-    "front-matter": "^2.1.0",
     "marked": "^0.3.6"
   },
   "devDependencies": {

@@ -8,11 +8,12 @@ var html = md`
 
 console.log(html.toString())
 
-var options = md`---
+// set marked options
+
+md.setOptions({
   gfm: false
-  ---
-  
-  ~~Github flavorded markdown is off~~
-`
+})
+
+var options = md`~~Github flavorded markdown is off~~`
 
 console.log(options.toString())
