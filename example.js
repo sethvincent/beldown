@@ -14,6 +14,6 @@ md.setOptions({
   gfm: false
 })
 
-var options = md`~~Github flavorded markdown is off~~`
+var options = md`~~Github flavored markdown is off~~`
 
 console.log(options.toString())

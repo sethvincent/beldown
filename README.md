@@ -52,7 +52,7 @@ This returns:
 
 ```html
 <div>
-<p>~~Github flavorded markdown is off~~</p>
+<p>~~Github flavored markdown is off~~</p>
 </div>
 ```
 
