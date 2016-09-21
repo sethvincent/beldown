@@ -35,12 +35,31 @@ This returns:
 </div>
 ```
 
+## Passing options to [marked](https://github.com/chjj/marked)
+
+```js
+var md = require('beldown')
+
+md.setOptions({
+  gfm: false
+})
+
+var html = md`~~Github flavored markdown is off~~`
+console.log(html.toString())
+```
+
+This returns:
+
+```html
+<div>
+<p>~~Github flavored markdown is off~~</p>
+</div>
+```
+
 ## Caveats:
 The wrapping div is required because multiple root elements must be wrapped in an enclosing tag. I'm not sure if there's a great way around that.
 
 Leading whitespace of each line is currently stripped. Maybe there's a case where that breaks things?
-
-There's not yet a way to pass options to marked. That would be nice.
 
 ## License
 [ISC](LICENSE.md)

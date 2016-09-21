@@ -21,3 +21,5 @@ module.exports = function beldown (strings) {
   arguments[0] = parts
   return bel.apply(null, arguments)
 }
+
+module.exports.setOptions = marked.setOptions

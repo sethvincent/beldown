@@ -6,3 +6,14 @@ test('hi', function (t) {
   t.equal(html.toString(), `<div>\n<p>hi</p>\n</div>`)
   t.end()
 })
+
+test('options', function (t) {
+  md.setOptions({
+    gfm: false
+  })
+  
+  var html = md`~~cool~~`
+  
+  t.equal(html.toString(), '<div>\n<p>~~cool~~</p>\n</div>')
+  t.end()
+})
