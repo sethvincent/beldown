@@ -1,6 +1,6 @@
 {
   "name": "beldown",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "create dom nodes from markdown inside tagged template strings using bel & marked",
   "main": "index.js",
   "scripts": {
